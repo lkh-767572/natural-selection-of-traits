@@ -116,25 +116,26 @@ class Creature:
         self.energy_used += self.energy_cost
             
     def mutate(self):
-        # For each mutation there is a chance of 10% each Generation. Native 
+        # For mutation there is a chance of 10% each Generation. Native 
         # Selection happens through that creatures die when the traits give 
         # them a disadvantage, replicate if it gives them an advantage and 
         # survive if neither.
 
-        self.chance_speed = random.choice(range(1, 100))
-        if self.chance_speed <= self.mutation_chance:
-            speed_change = random.choice([-self.speed_mutation, \
-            self.speed_mutation])
-            if speed_change == -self.speed_mutation:
-                self.speed += speed_change
-            else:
-                self.speed += speed_change
-        self.chance_sense = random.choice(range(1, 100))
+        self.chance_mutation = random.choice(range(1, 100))
+        if self.chance_mutation <= self.mutation_chance:
+            what_change = random.choice([0, 1])
+            if what_change == 0:
+                speed_change = random.choice([-self.speed_mutation, \
+                self.speed_mutation])
+                if speed_change == -self.speed_mutation:
+                    self.speed += speed_change
+                else:
+                    self.speed += speed_change
 
-        if self.chance_sense <= self.mutation_chance:
-            sense_change = random.choice([-self.sense_mutation, \
-            self.sense_mutation])
-            if sense_change == -self.sense_mutation:
-                self.sense += sense_change
-            else:
-                self.sense += sense_change
+            if what_change == 1:
+                    sense_change = random.choice([-self.sense_mutation, \
+                    self.sense_mutation])
+                    if sense_change == -self.sense_mutation:
+                        self.sense += sense_change
+                    else:
+                        self.sense += sense_change
