@@ -8,7 +8,7 @@ from creature import Creature
 # Simulation Settings cental
 start_speed = 1.00 
 start_sense = 100
-start_energy = 1000
+start_energy = 500
 gen_len = 8
 FOOD = 200
 CREATURES = 100
@@ -142,4 +142,3 @@ def main():
   
 if __name__ == '__main__':
         main()
-    
