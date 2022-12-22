@@ -8,3 +8,4 @@ inspired by primer
 - If the creatures have not found any food, they die and get removed, if they found one piece of food, they manage to survive and of they found two or more pieces they survive and replicate
 - The replicate is an exact clone of the creature and has a 10% chance that a mutation happens, in which case the speed (50%) or the sensor (50%) change by a given value. The cances are 50/50 for either an neagtive or positive change it the values.
 - Natural selection happens because the creatures with random changes, that give them a benefit survive and reproduce, and those with changes that make them worse adapted die and wont pass off their genes
+- At the end of the simulation a graph will show up displaying the number of creatures and the average speed and sense value each generation
