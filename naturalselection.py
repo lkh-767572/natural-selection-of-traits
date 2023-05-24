@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 start_speed = 0.75
 start_sense = 125
 start_energy = 500
-gen_len = 8
+gen_len = 12
 FOOD = 75
 CREATURES = 10
 speed_mutation = 0.1
