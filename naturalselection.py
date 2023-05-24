@@ -15,7 +15,7 @@ FOOD = 75
 CREATURES = 10
 speed_mutation = 0.1
 sense_mutation = 12.5
-nutrition = 75 # How much energy creatures gain from eating food
+nutrition = 50 # How much energy creatures gain from eating food
 
 # colors
 blue = (0, 0, 255)
